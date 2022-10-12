@@ -1,0 +1,29 @@
+<button type="button" class="btn btn-primary" (click)="getInfo()">
+  {{ buttonText }}
+</button>
+
+<div class="modal fade" id="modalShowInfo" tabindex="-1" aria-labelledby="modalShowInfoLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title text-black" id="modalShowInfoLabel">Information about <span class="name"></span></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body container">
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Name:</b><i><span class="name"></span></i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>English Name:</b><i><span class="englishName"></span></i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Is A Planet:</b><i><span class="isPlanet"></span></i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Inclination:</b><i><span class="inclination"></span>&deg;</i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Density:</b><i><span class="density"></span>&nbsp;g/cm<sup>3</sup></i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Gravity:</b><i><span class="gravity"></span>&nbsp;m/s<sup>2</sup></i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Mean Radius:</b><i><span class="meanRadius"></span>&nbsp;km</i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Polar Radius:</b><i><span class="polarRadius"></span>&nbsp;km</i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Axial Tilt:</b><i><span class="axialTilt"></span>&deg;</i></div>
+      <div class="text-black border-bottom d-flex align-items-center justify-content-between"><b>Average Temperature:</b><i><span class="averageTemperature"></span></i></div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+    </div>
+  </div>
+</div>
+</div>

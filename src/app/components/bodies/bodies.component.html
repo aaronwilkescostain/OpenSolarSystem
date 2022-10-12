@@ -1,0 +1,3 @@
+<app-body-item *ngFor="let body of bodies" [body]="body"></app-body-item>
+<h3 *ngIf="bodies.length === 0 && loaded === false" class="text-white d-flex align-items-center justify-content-center" [ngStyle]="{'min-height': 'calc(100vh - 70px)'}">Gathering Information...</h3>
+<h3 *ngIf="bodies.length === 0 && loaded === true" class="text-white d-flex align-items-center justify-content-center" [ngStyle]="{'min-height': 'calc(100vh - 70px)'}">No information to show.</h3>

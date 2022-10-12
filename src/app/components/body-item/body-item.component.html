@@ -1,0 +1,5 @@
+<div class="body p-3 m-1 mb-3">
+    <h3 class="d-flex align-items-center justify-content-between mb-3"><span><fa-icon class="mx-2" [ngStyle]="{'color': 'green'}" [icon]="faName"></fa-icon>Name:</span>{{body.name}}</h3>
+    <h3 class="d-flex align-items-center justify-content-between"><span><fa-icon class="mx-2" [ngStyle]="{'color': 'red'}" [icon]="faFlag"></fa-icon>English Name:</span>{{body.englishName}}</h3>
+    <div class="d-flex align-items-center justify-content-end mt-3"><app-body-item-more-info buttonText="Show More Information" bodyName="{{body.id}}"></app-body-item-more-info></div>
+</div>
